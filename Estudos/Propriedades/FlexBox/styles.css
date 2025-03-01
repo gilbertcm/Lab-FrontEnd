@@ -1,0 +1,72 @@
+/* Arquivo de estilos CSS */
+
+/* Estilização padrão para iniciar*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Define a caixa de modelagem como border-box*/
+    border: none;
+}
+
+/*Final da estilização padrão*/
+
+
+.flex-container {
+    display: flex;
+    height: 500px;
+    max-width: 600px;
+    margin: auto;
+/*    padding: 20px;
+/*    flex-direction: row;
+      flex-wrap: wrap;                      /*wrap faz a quebra de linha dos itens*/
+    flex-flow: row wrap;                    /*Abreviação do flex-direction e flex-wrap*/
+    justify-content: center;              /*Centraliza os itens dentro do conteiner*/
+/*    justify-content: flex-start;          /*Posiciona os itens no inicio do conteiner (Padrão)*/
+/*    justify-content: flex-end;            /*posiciona os itens flexíveis no final do contêiner*/
+/*    justify-content: space-around;        /*exibe os itens flexíveis com espaço ao redor deles:*/
+/*    justify-content: space-between;       /*exibe os itens flexíveis com espaço entre eles*/
+/*    justify-content: space-evenly;        /*exibe os itens com espaço igual ao redor deles (Espaçados)*/
+/*    align-items: center;                  /*posiciona os itens flexíveis no meio do contêiner*/
+/*    align-items: flex-start;              /*posiciona os itens no topo do contêiner*/
+    align-content: center;                  /*as linhas são compactadas em direção ao centro do contêiner*/
+    align-content: space-between;           /*Primeiro item fica no topo da borda, ultimo item no final da borda*/
+    background-color: blueviolet;
+}
+
+.flex-container > div {
+    display: flex;
+    margin: 10px;
+    padding: 30px;
+    width: 80px;
+    height: 80px;
+    max-width: 200px;
+    line-height: 75%;
+    font-size: 30px;
+    background-color: #f1f1f1;
+}
+
+h1 {
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+.center_Perfeita {
+    display: flex;
+    height: 300px;
+    margin: auto;
+    max-width: 600px;               /*Maximo de Largura*/
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+}
+
+.center_Perfeita > div {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    background-color: #f1f1f1;
+}
