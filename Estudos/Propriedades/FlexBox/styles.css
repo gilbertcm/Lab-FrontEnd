@@ -4,8 +4,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Define a caixa de modelagem como border-box*/
-    border: none;
+    box-sizing: border-box; /* Define a caixa de modelagem como caixa de borda*/
 }
 
 /*Final da estilização padrão*/
@@ -13,7 +12,7 @@
 
 .flex-container {
     display: flex;
-    height: 500px;
+    height: 400px;
     max-width: 600px;
     margin: auto;
 /*    padding: 20px;
@@ -29,12 +28,11 @@
 /*    align-items: center;                  /*posiciona os itens flexíveis no meio do contêiner*/
 /*    align-items: flex-start;              /*posiciona os itens no topo do contêiner*/
     align-content: center;                  /*as linhas são compactadas em direção ao centro do contêiner*/
-    align-content: space-between;           /*Primeiro item fica no topo da borda, ultimo item no final da borda*/
+/*    align-content: space-between;           /*Primeiro item fica no topo da borda, ultimo item no final da borda*/
     background-color: blueviolet;
 }
 
 .flex-container > div {
-    display: flex;
     margin: 10px;
     padding: 30px;
     width: 80px;
@@ -47,26 +45,34 @@
 
 h1 {
     margin: 5px;
-    padding: 5px;
     text-align: center;
+}
+
+.title {
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: end;
 }
 
 .center_Perfeita {
     display: flex;
-    height: 300px;
+    height: 400px;
     margin: auto;
+    margin-bottom: 10px;
     max-width: 600px;               /*Maximo de Largura*/
     justify-content: center;
     align-items: center;
+/*    align-content: center;        /*Ele centraliza um conjunto de itens na vertical*/
     background-color: blueviolet;
 }
 
 .center_Perfeita > div {
-    display: flex;
+    margin: 10px;
+    padding: 40px;
     width: 100px;
     height: 100px;
-    align-items: center;
-    justify-content: center;
+    line-height: 75%;
     font-size: 30px;
     background-color: #f1f1f1;
 }
