@@ -1,0 +1,119 @@
+/* ==============================
+   RESET GLOBAL E PADRÕES BÁSICOS
+   ============================== */
+
+/* Resetando margens, paddings e garantindo um box-sizing adequado */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Garantindo altura mínima e uma base responsiva */
+html, body {
+    height: 100%;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+/* Removendo estilos padrão de listas */
+ul, ol {
+    list-style: none;
+}
+
+/* Removendo decoração de links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Definição padrão para botões */
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    font: inherit;
+}
+
+/* Imagens responsivas */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ==============================
+   LAYOUT BÁSICO
+   ============================== */
+
+/* Container centralizado e com espaçamento adequado */
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Flexbox útil para centralizar itens */
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Adicionado para organizar em coluna */
+    flex-direction: column;
+}
+
+/* Grade básica */
+.grid {
+    display: grid;
+    gap: 20px;
+}
+
+/* ==============================
+   TIPOGRAFIA
+   ============================== */
+
+/* Títulos */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+/* Parágrafos */
+p {
+    margin-bottom: 1rem;
+}
+
+/* ==============================
+   BOTÕES PADRÃO
+   ============================== */
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* ==============================
+   MEDIA QUERIES PARA RESPONSIVIDADE
+   ============================== */
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+}
